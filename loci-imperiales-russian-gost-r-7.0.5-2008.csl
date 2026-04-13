@@ -106,22 +106,18 @@
     <choose>
       <if variable="language">
         <choose>
-          <!-- Проверка на русский язык (любое из значений ru или rus) -->
-          <if variable="language" match="any">
-            <text value="ru"/>
-            <text value="rus"/>
+          <if variable="language" value="ru">
+            <text value="0"/>
           </if>
-          <!-- ВЫВОД: Для русских источников отдаем "0" -->
-          <text value="0"/>
-          
-          <!-- Иначе выводим то значение, которое записано в поле language -->
-          <else-if variable="language">
-            <text variable="language"/>
+          <else-if variable="language" value="rus">
+            <text value="0"/>
           </else-if>
+          <else>
+            <text variable="language"/>
+          </else>
         </choose>
       </if>
       <else>
-        <!-- ВЫВОД: Если поле language пустое, отдаем "z", чтобы они ушли в конец -->
         <text value="z"/>
       </else>
     </choose>
