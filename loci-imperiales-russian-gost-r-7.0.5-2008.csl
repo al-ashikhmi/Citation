@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="ru-RU">
+  <info>
+    <title>Loci Imperiales (Russian)</title>
+    <id>loci-imperiales-russian-gost-r-7.0.5-2008</id>
+    <link href="http://www.zotero.org/styles/loci-imperiales-russian-gost-r-7.0.5-2008" rel="self"/>
+    <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008" rel="template"/>
+    <issn>3034-6673</issn>
+    <author>
+      <name>Alexey Ashikhmin</name>
+      <email>alexseyashihmin@mail.ru</email>
+    </author>
+    <category citation-format="note"/>
+    <category field="history"/>
+    <category field="humanities"/>
+    <summary>Style is based on the Russian GOST-R-7.0.5-2008 for journal by Peterhof State Museum Reserve.
+
+      Стиль основан на ГОСТ Р 7.0.5-2008 «Библиографическая ссылка. Общие требования и правила составления».
+      Стиль разработан для публикаций в научном журнале «Loci Imperiales», издаваемом в ГМЗ «Петергоф».
+
+      Стиль позволяет корректно цитировать литературу и архивные источники в подстрочных сносках (Notes), а также составлять список использованной литературы (Bibliography).
+
+      Сортировка в списке литературы производится по алфавитному порядку. Второй уровень — по автору/заглавию. Третий уровень — по дате издания.
+
+      Добавлена локализация стандартных обозначений на русский язык с некоторыми особенностями:
+        - Составитель выводится при заполненном поле «Редактор серии» (collection-editor);
+        - Публикатор выводится при заполненном поле «Контрибьютор» (contributor).
+      Локализация английских терминов не реализована на данный момент.
+
+      Добавлены элементы форматирования:
+      - Курсив для имен авторов (italic)
+      - Неразрывные пробелы (&#160;):
+        - у авторов между инициалами, а также между фамилией и инициалами
+        - перед разделителями — косой чертой (/) и двойной косой черттой (//)
+        - в численных данных (Т.&#160;, №&#160;?? С.&#160;, &#160;с.)
+        - в повторных ссылках (Там&#160;же.)
+
+      Стиль различает положение ссылки (цитирования):
+        - первичная (first) — выводит полные данные, кроме «Издателя» (publisher) для книги, главы, статьи в сборнике конференции;
+        - повторная (subsequent) — если заполнено поле «Краткое назв.», выводится оно. Если не заполнено, выводится полное название;
+        - повторная, идущая сразу после первой (ibid) — выводит «Там же»;
+        - повторная, идущая сразу после первой, но с другим локатором (ibid-with-locator)
+      К сожалению, нельзя прописать градацию для повторных ссылок. Если в новой ссылке отличается какой-то один элемент, кроме страниц, то ссылка не будет считаться ibid. Она будет или first, или subsequent.
+      
+      Стиль учитывает следующие типы записей в Zotero:
+
+        1) Книга (book)
+          Учитываются авторы, редакторы, составители, переводчики, публикаторы.
+          Для многотомных изданий указываются (при наличии) общее количество томов и данные конкретного тома.
+          Для сериальных изданий указывается название серии и номер выпуска.
+
+        2) Глава или раздел книги (chapter) и статья в сборнике конференции (paper-conference)
+          Если при цитировании не указан локатор, то выводится диапазон страниц раздела/статьи.
+
+        3) Статья в журнале (article)
+          Учитывается автор, название статьи, название журнала, том, номер, год издания, страницы. Если не указан локатор, то выводится диапазон всей статьи.
+
+        4) Диссертация и автореферат (thesis)
+          Обозначение ресурса (например, «автореф. дис. ... канд. ист. наук: 07.00.09») заполняется в поле «Тип» (genre).
+          Заполненное поле «Университет» позволит добавить место защиты в сведения об ответственности.
+
+        5) Веб-страница (webpage)
+          Учитываются автор, название страницы, название сайта, URL-адрес, дата доступа.
+
+        6) Рукопись (manuscript)
+          Данный тип записи используется для создания ссылок (цитат) на архивные документы и дела. Он не учитывается в списке литературы (библиографии).
+          
+          Ссылка на архивный источник различает положение ссылки:
+            - первичная (first). Выводятся полное название архива, его сокращение в скобках, поисковые данные. Для этого необходимо заполнять поля: «Учреждение» (publisher, полное название архива), «Архив» (archive, сокращение), «Место в архиве» (archive_location, поисковые данные).
+            - повторная (subsequent). Выводятся сокращение архива и поисковые данные.
+          
+          Ссылка различает документы и дела:
+            - дело (поле «Тип рукописи» (genre) заполнено как «Дело»). В этом случае, если не указан локатор, будет выведено количество листов (number-of-pages), например: 23 л.
+            - документ (поле «Тип рукописи» (genre) пустое или заполнено как «Документ»). В этом случае, если не указан локатор, будет выведен диапазон листов из того же поля (number-of-pages), например: Л. 14–15.
+
+
+      Комплексные ссылки разделяются точкой с запятой (;). На данный момент ссылки на одного автора не группируются.
+
+    </summary>
+    <updated>2026-04-01T21:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+
+  <locale xml:lang="ru">
+    <terms>
+      <term name="accessed">дата обращения</term>
+      <term name="available at" form="short">URL</term>
+      <term name="et-al">и др.</term>
+      <term name="ibid">там же</term>
+      <term name="page" form="short">с.</term>
+      <term name="column" form="short">стб.</term>
+      <term name="number-of-pages" form="short">с.</term>
+      <term name="number-of-volumes" form="short">т.</term>
+      <term name="editor" form="verb-short">ред.</term>
+      <term name="collection-editor" form="verb-short">сост.</term>
+      <term name="collection-number" form="short">вып.</term>
+      <term name="translator" form="verb-short">пер.</term>
+      <term name="contributor" form="verb-short">публ.</term>
+      <term name="folio" form="short">л.</term>
+    </terms>
+  </locale>
+
+<!--  СОРТИРОВКА  -->
+
+  <macro name="language-sort">
+    <choose>
+      <if variable="language">
+        <choose>
+          <!-- Проверка на русский язык (любое из значений ru или rus) -->
+          <if variable="language" match="any">
+            <text value="ru"/>
+            <text value="rus"/>
+          </if>
+          <!-- ВЫВОД: Для русских источников отдаем "0" -->
+          <text value="0"/>
+          
+          <!-- Иначе выводим то значение, которое записано в поле language -->
+          <else-if variable="language">
+            <text variable="language"/>
+          </else-if>
+        </choose>
+      </if>
+      <else>
+        <!-- ВЫВОД: Если поле language пустое, отдаем "z", чтобы они ушли в конец -->
+        <text value="z"/>
+      </else>
+    </choose>
+  </macro>
+
+
+<!--  ЗАГОЛОВОК ССЫЛКИ  -->
+
+  <macro name="author-title"> <!-- Сортировка по автору; при его отсутствии — сортировка по заголовку -->
+    <names variable="author" font-style="italic" suffix=" ">
+      <name et-al-min="4" et-al-use-first="1" name-as-sort-order="all" sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+    </names>
+    <text variable="title"/>
+  </macro>
+
+<!--  СВЕДЕНИЯ К ЗАГЛАВИЮ  -->
+
+  <macro name="container-title-position">
+    <choose>
+      <if position="first">
+        <text variable="container-title"/>
+      </if>
+      <else>
+        <text variable="container-title" form="short"/>
+      </else>
+    </choose>
+  </macro>
+
+  <macro name="volume-info">
+    <choose>
+      <if variable="number-of-volumes">
+        <group delimiter=" " prefix=": ">
+          <text value="в"/>
+          <text variable="number-of-volumes"/>
+          <text term="number-of-volumes" form="short"/>
+        </group>
+      </if>
+    </choose>
+  </macro>
+
+<!--  ОБЛАСТЬ ОТВЕТСТВЕННОСТИ  -->
+
+  <macro name="responsibility">
+    <group suffix="." delimiter="; ">
+      <names variable="editor">
+        <label form="verb-short" suffix="&#160;" text-case="capitalize-first"/>
+        <name sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+      </names>
+      <names variable="collection-editor">
+        <label form="verb-short" suffix="&#160;"/>
+        <name sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+      </names>
+      <names variable="translator">
+        <label form="verb-short" suffix="&#160;"/>
+        <name sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+      </names>
+      <names variable="contributor">
+        <label form="verb-short" suffix="&#160;"/>
+        <name sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+      </names>
+    </group>
+  </macro>
+
+<!--  ВЫХОДНЫЕ ДАННЫЕ  -->
+
+  <macro name="publisher">
+    <group delimiter=": ">
+      <text variable="publisher-place"/>
+      <text variable="publisher"/>
+    </group>
+    <text macro="year-date" prefix=", "/>
+  </macro>
+
+  <macro name="year-date">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+
+<!--  ЭЛЕКТРОННЫЕ РЕСУРСЫ  -->
+
+  <macro name="access">
+    <group delimiter=" ">
+      <group delimiter=": ">
+        <text term="available at" form="short"/>
+        <text variable="URL"/>
+      </group>
+      <group prefix="(" suffix=")" delimiter=": ">
+        <text term="accessed"/>
+        <date variable="accessed" form="numeric">
+          <date-part name="day"/>
+          <date-part name="month"/>
+          <date-part name="year"/>
+        </date>
+      </group>
+    </group>
+  </macro>
+
+<!--  ОБЛАСТЬ СЕРИИ  -->
+
+  <macro name="series-info">
+    <choose>
+      <if variable="collection-title">
+        <group prefix=" (" suffix=")" delimiter=". ">
+          <text variable="collection-title"/>
+          <group delimiter="&#160;">
+            <label variable="collection-number" form="short" text-case="capitalize-first"/>
+            <text variable="collection-number"/>
+          </group>
+        </group>
+      </if>
+    </choose>
+  </macro>
+
+<!-- АРХИВНЫЙ ШИФР -->
+
+  <macro name="archive-shifr">
+    <choose>
+      <if position="first">
+        <group delimiter=". ">
+          <group delimiter=" ">
+            <text variable="publisher"/>
+            <text variable="archive" prefix="(" suffix=")"/>
+          </group>
+          <text variable="archive_location"/>
+        </group>
+      </if>
+      <else>
+        <group delimiter=". ">
+          <text variable="archive"/>
+          <text variable="archive_location"/>
+        </group>
+      </else>
+    </choose>
+  </macro>
+
+<!--  ЦИТИРОВАНИЕ  -->
+
+  <citation>
+    <layout delimiter="; " suffix=".">
+      <choose>
+
+      <!--  Повторные ссылки  -->
+        <if position="ibid-with-locator">
+          <group delimiter=". ">
+            <text term="ibid" text-case="capitalize-first"/>
+            <group delimiter="&#160;">
+              <label variable="locator" form="short" text-case="capitalize-first"/>
+              <text variable="locator"/>
+            </group>
+          </group>
+        </if>
+        <else-if position="ibid">
+          <text term="ibid" text-case="capitalize-first"/>
+        </else-if>
+        <else-if position="subsequent">
+          <group delimiter=". ">
+            <names variable="author" font-style="italic">
+              <name et-al-min="4" et-al-use-first="1" name-as-sort-order="all" sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+            </names>
+            <text variable="title" form="short"/>
+            <text variable="volume" prefix="Т.&#160;"/>
+            <group delimiter="&#160;">
+              <label variable="locator" form="short" text-case="capitalize-first"/>
+              <text variable="locator"/>
+            </group>
+          </group>
+        </else-if>
+        <else>
+          <choose>
+
+          <!--  Ссылка на книгу  -->
+            <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+              <group delimiter=". ">
+                <group delimiter="&#160;/ ">
+                  <group>
+                    <text macro="author-title"/>
+                    <text macro="volume-info"/>
+                  </group>
+                  <text macro="responsibility"/>
+                </group>
+                <group delimiter=", ">
+                  <text variable="publisher-place"/>
+                  <text macro="year-date"/>
+                </group>
+                <group delimiter="&#160;">
+                  <label variable="volume" form="short" text-case="capitalize-first"/>
+                  <text variable="volume"/>
+                </group>
+                <group delimiter="&#160;">
+                  <label variable="locator" form="short" text-case="capitalize-first"/>
+                  <text variable="locator"/>
+                </group>
+                <text macro="series-info"/>
+              </group>
+            </if>
+
+            <!--  Ссылка на главу, конференцию  -->
+            <else-if type="chapter paper-conference" match="any">
+              <group delimiter=". ">
+                <group delimiter="&#160;/ ">
+                  <group>
+                    <text macro="author-title"/>
+                    <group prefix="&#160;// ">
+                      <names variable="container-author" suffix=" " font-style="italic">
+                        <name et-al-min="4" et-al-use-first="1" name-as-sort-order="all" sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+                      </names>
+                      <text macro="container-title-position"/>
+                      <text macro="volume-info"/>
+                    </group>
+                  </group>
+                  <text macro="responsibility"/>
+                </group>
+                <group delimiter=", ">
+                  <text variable="publisher-place"/>
+                  <text macro="year-date"/>
+                </group>
+                <group delimiter="&#160;">
+                  <label variable="volume" form="short" text-case="capitalize-first"/>
+                  <text variable="volume"/>
+                </group>
+                <choose>
+                  <if variable="locator">
+                    <group delimiter="&#160;" prefix=" ">
+                      <label variable="locator" form="short" text-case="capitalize-first"/>
+                      <text variable="locator"/>
+                    </group>
+                  </if>
+                  <else>
+                    <group delimiter="&#160;" prefix=" ">
+                      <label variable="page" form="short" text-case="capitalize-first"/>
+                      <text variable="page"/>
+                    </group>
+                  </else>
+                </choose>
+                <text macro="series-info"/>
+              </group>
+            </else-if>
+
+            <!--  Ссылка на журнальную статью  -->
+            <else-if type="article-journal article-magazine article-newspaper broadcast interview map patent personal_communication speech" match="any">
+              <group>
+                <text macro="author-title"/>
+                <group delimiter=". ">
+                  <group prefix="&#160;// " delimiter=". ">
+                    <text variable="container-title"/>
+                    <text macro="year-date"/>
+                    <text variable="volume" prefix="Т.&#160;"/>
+                    <text variable="issue" prefix="№&#160;"/>
+                  </group>
+                  <choose>
+                    <if variable="locator">
+                      <group delimiter="&#160;" prefix=" ">
+                        <label variable="locator" form="short" text-case="capitalize-first"/>
+                        <text variable="locator"/>
+                      </group>
+                    </if>
+                    <else>
+                      <group delimiter="&#160;" prefix=" ">
+                        <label variable="page" form="short" text-case="capitalize-first"/>
+                        <text variable="page"/>
+                      </group>
+                    </else>
+                  </choose>
+                </group>
+              </group>
+            </else-if>
+
+            <!--  Ссылка на диссертацию  -->
+            <else-if type="thesis" match="any">
+              <group delimiter=". ">
+                <group delimiter="&#160;/ ">
+                  <group delimiter=" : ">
+                    <text macro="author-title"/>
+                    <text variable="genre"/>
+                  </group>
+                  <text variable="publisher" prefix="[Место защиты: " suffix="]"/>
+                </group>
+                <group delimiter=", ">
+                  <text variable="publisher-place"/>
+                  <text macro="year-date"/>
+                </group>
+                <group delimiter="&#160;" prefix=" ">
+                  <label variable="locator" form="short" text-case="capitalize-first"/>
+                  <text variable="locator"/>
+                </group>
+              </group>
+            </else-if>
+
+            <!--  Ссылка на электронный ресурс  -->
+            <else-if type="webpage post post-weblog" match="any">
+              <group delimiter=". ">
+                <group>
+                  <text macro="author-title"/>
+                  <text variable="container-title" prefix="&#160;// "/>
+                </group>
+                <text macro="access"/>
+              </group>
+            </else-if>
+            
+            <!-- Ссылка на архивный документ -->
+            <else-if type="manuscript" match="any">
+              <group delimiter=". ">
+                <group>
+                  <group delimiter=". ">
+                    <text macro="author-title"/>
+                    <text macro="year-date"/>
+                  </group>
+                  <group prefix="&#160;// ">
+                    <text macro="archive-shifr"/>
+                  </group>
+                </group>
+                <choose>
+                  <if variable="locator">
+                    <group delimiter="&#160;">
+                      <label variable="locator" form="short" text-case="capitalize-first"/>
+                      <text variable="locator"/>
+                    </group>
+                  </if>
+                  <else-if variable="genre" value="Дело">
+                    <text variable="number-of-pages" suffix="&#160;л."/>
+                  </else-if>
+                  <else>
+                    <group delimiter="&#160;">
+                      <text value="Л."/>
+                      <text variable="number-of-pages"/>
+                    </group>
+                  </else>
+                </choose>
+              </group>
+            </else-if>
+
+            <!--  Общая ссылка  -->
+            <else>
+              <group>
+                <text macro="author-title"/>
+                <group delimiter=". ">
+                  <group prefix="&#160;// " delimiter=". ">
+                    <text variable="container-title" form="short"/>
+                    <text macro="year-date"/>
+                    <text variable="volume" prefix="Т.&#160;"/>
+                    <text variable="issue" prefix="№&#160;"/>
+                  </group>
+                  <group delimiter="&#160;" prefix=" ">
+                    <label variable="locator" form="short" text-case="capitalize-first"/>
+                    <text variable="locator"/>
+                  </group>
+                </group>
+              </group>
+            </else>
+          </choose>
+        </else>
+      </choose>
+    </layout>
+  </citation>
+
+<!--  БИБЛИОГРАФИЯ  -->
+
+  <bibliography>
+    <sort>
+      <key macro="language-sort"/>
+      <key macro="author-title"/>
+      <key variable="issued"/>
+    </sort>
+    <layout suffix=".">
+      <choose>
+
+        <!--  Книга в библиографии  -->
+        <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+          <group delimiter=". ">
+            <group delimiter="&#160;/ ">
+              <text macro="author-title"/>
+              <text macro="responsibility"/>
+            </group>
+            <text variable="edition"/>
+            <text macro="publisher"/>
+            <group delimiter="&#160;">
+                  <label variable="volume" form="short" text-case="capitalize-first"/>
+                  <text variable="volume"/>
+                </group>
+            <text variable="number-of-pages" suffix="&#160;с."/>
+            <text macro="series-info"/>
+          </group>
+        </if>
+      
+        <!--  Глава, конференция в библиографии  -->
+        <else-if type="chapter paper-conference" match="any">
+          <group delimiter=". ">
+            <group delimiter="&#160;/ ">
+              <group>
+                <text macro="author-title"/>
+                <group prefix="&#160;// ">
+                  <names variable="container-author" suffix=" " font-style="italic">
+                    <name et-al-min="4" et-al-use-first="1" name-as-sort-order="all" sort-separator="&#160;" initialize-with=".&#160;" delimiter=", "/>
+                  </names>
+                  <text variable="container-title"/>
+                  <text macro="volume-info"/>
+                </group>
+              </group>
+              <text macro="responsibility"/>
+            </group>
+            <text variable="edition"/>
+            <text macro="publisher"/>
+            <group delimiter="&#160;" prefix=" ">
+              <label variable="page" form="short" text-case="capitalize-first"/>
+              <text variable="page"/>
+            </group>
+            <text macro="series-info"/>
+          </group>
+        </else-if>
+
+        <!--  Журнальная статья в библиографии  -->
+        <else-if type="article-journal article-magazine article-newspaper broadcast interview map patent personal_communication speech" match="any">
+          <text macro="author-title"/>
+          <group delimiter=". " suffix=".">
+            <group prefix="&#160;// " delimiter=". ">
+              <text variable="container-title"/>
+              <text macro="year-date"/>
+              <text variable="volume" prefix="Т.&#160;"/>
+              <text variable="issue" prefix="№&#160;"/>
+            </group>
+            <group delimiter="&#160;" prefix=" ">
+              <label variable="page" form="short" text-case="capitalize-first"/>
+              <text variable="page"/>
+            </group>
+          </group>
+        </else-if>
+
+        <!--  Диссертация в библиографии  -->
+        <else-if type="thesis" match="any">
+          <group delimiter=". ">
+            <group delimiter="&#160;/ ">
+              <group delimiter=" : ">
+                <text macro="author-title"/>
+                <text variable="genre"/>
+              </group>
+              <text variable="publisher" prefix="[Место защиты: " suffix="]"/>
+            </group>
+            <group delimiter=", ">
+              <text variable="publisher-place"/>
+              <text macro="year-date"/>
+            </group>
+            <text variable="number-of-pages" suffix="&#160;с."/>
+          </group>
+        </else-if>
+
+        <!--  Электронный ресурс в библиографии  -->
+        <else-if type="webpage post post-weblog" match="any">
+          <group delimiter=". ">
+            <group>
+              <text macro="author-title"/>
+              <text variable="container-title" prefix="&#160;// "/>
+            </group>
+            <text macro="access"/>
+          </group>
+        </else-if>
+
+        <!--  Общий случай в библиографии  -->
+        <else>
+          <text macro="author-title"/>
+          <group delimiter=". " suffix=".">
+            <group prefix="&#160;// " delimiter=". ">
+              <text variable="container-title" form="short"/>
+              <text macro="year-date"/>
+              <text variable="volume" prefix="Т.&#160;"/>
+              <text variable="issue" prefix="№&#160;"/>
+            </group>
+            <text variable="page" prefix="С.&#160;"/>
+          </group>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>
