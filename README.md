@@ -8,7 +8,7 @@
 
 1. Нажмите на ссылку ниже и откройте файл двойным щелчком — Zotero или Mendeley автоматически установят его.
    
-   **[⬇️ Скачать CSL стиль для Zotero / Mendeley](https://github.com/al-ashikhmi/Citation/raw/main/loci-imperiales-russian-gost-r-7.0.5-2008.csl)**
+   **[⬇️ Скачать CSL стиль для Zotero / Mendeley](https://github.com/al-ashikhmi/Citation/releases/download/v1.0/loci-imperiales-russian-gost-r-7.0.5-2008.csl)**
 
 2. Ручное скачивание:
     - Перейдите в файл `loci-imperiales-russian-gost-r-7.0.5-2008.csl` в этом репозитории.
